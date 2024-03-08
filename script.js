@@ -102,3 +102,7 @@ console.log(arr2);
 // concat
 const letters = arr.concat(arr2);
 console.log(letters);
+
+//or
+const letters2 = [...arr, ...arr2];
+console.log(letters2);
