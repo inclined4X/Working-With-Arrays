@@ -84,6 +84,7 @@ const displayMovement = function (movements) {
 };
 
 displayMovement(account1.movements);
+// console.log(containerMovements.innerHTML);
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
