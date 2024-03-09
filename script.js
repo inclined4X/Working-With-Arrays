@@ -63,7 +63,16 @@ const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
 //DOM ELEMENTS
-const displayMovement = function (movements) {};
+const displayMovement = function (movements) {
+  movements.forEach(function (mov, i) {
+    const html = `
+    <div class="movements__row">
+          <div class="movements__type movements__type--deposit">2 deposit</div>
+          <div class="movements__value">4 000€</div>
+        </div>
+    `;
+  });
+};
 
 displayMovement(account1.movements);
 /////////////////////////////////////////////////
