@@ -61,7 +61,7 @@ const inputTransferAmount = document.querySelector('.form__input--amount');
 const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
-
+/*
 //DOM ELEMENTS
 const displayMovement = function (movements) {
   containerMovements.innerHTML = '';
@@ -84,6 +84,7 @@ const displayMovement = function (movements) {
 };
 
 displayMovement(account1.movements);
+*/
 // console.log(containerMovements.innerHTML);
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
@@ -159,7 +160,7 @@ movements.forEach(function (movement, i, arr) {
 // 0: FUNCTION(200)
 // 1: FUNCTION(450) 
 //...
-*/
+
 
 //MAP
 const currencies = new Map([
@@ -178,3 +179,13 @@ console.log(currenciesUnique);
 currenciesUnique.forEach(function (value, _, map) {
   console.log(`${value}: ${value}`);
 });
+*/
+
+// coding challenge #1
+// task 1
+
+const checkDogs = function (dogsJulia, dogsKate) {
+  const dogsJuliaCorrected = dogsJulia.slice(0);
+};
+
+console.log(checkDogs([3, 5, 2, 12, 7], [4, 1, 15, 8, 3]));
