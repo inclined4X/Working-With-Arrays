@@ -186,6 +186,8 @@ currenciesUnique.forEach(function (value, _, map) {
 
 const checkDogs = function (dogsJulia, dogsKate) {
   const dogsJuliaCorrected = dogsJulia.slice(0);
+  const catsJulia = dogsJuliaCorrected.slice(1, -2);
+  console.log(catsJulia);
 };
 
 console.log(checkDogs([3, 5, 2, 12, 7], [4, 1, 15, 8, 3]));
