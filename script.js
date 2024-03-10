@@ -185,12 +185,32 @@ currenciesUnique.forEach(function (value, _, map) {
 // task 1
 
 const checkDogs = function (dogsJulia, dogsKate) {
-  const dogsJuliaCorrected = dogsJulia.slice(0);
-  const catsJulia = dogsJuliaCorrected.slice(1, -2);
-  console.log(catsJulia);
+  const dogsJuliaCorrected = dogsJulia.slice();
+  dogsJuliaCorrected.splice(0, 1);
+  dogsJuliaCorrected.splice(-2);
+  console.log(dogsJuliaCorrected);
 
-  const juliaKateArray = [...dogsJuliaCorrected, ...dogsJulia];
-  console.log(juliaKateArray);
+  // const juliaKateArray = [...catsJulia, ...dogsJulia];
+  // console.log(juliaKateArray);
+
+  const dogs = dogsJuliaCorrected.concat(dogsKate);
+
+  // whether dog or puppy
+  // dogs.forEach(function (dog, i) {
+  //   const dogType = dog >= 3 ? 'adult' : 'Puppy';
+  //   const DogTell = `Dog number ${
+  //     i + 1
+  //   } is an ${dogType} and is ${dog} years old`;
+  //   console.log(DogTell);
+  // });
+
+  dogs.forEach(function(dog , 1){
+    if (dogs >= 3){
+      console.log(`Dog number ${i + 1} is an adult and is ${dog} years old`);
+    } else{
+      console.log();
+    }
+  })
 };
 
 console.log(checkDogs([3, 5, 2, 12, 7], [4, 1, 15, 8, 3]));
