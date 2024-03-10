@@ -204,13 +204,13 @@ const checkDogs = function (dogsJulia, dogsKate) {
   //   console.log(DogTell);
   // });
 
-  dogs.forEach(function(dog , 1){
-    if (dogs >= 3){
+  dogs.forEach(function (dog, i) {
+    if (dog >= 3) {
       console.log(`Dog number ${i + 1} is an adult and is ${dog} years old`);
-    } else{
-      console.log();
+    } else {
+      console.log(`Dog number ${i + 1} is still a puppy 🐹`);
     }
-  })
+  });
 };
 
 console.log(checkDogs([3, 5, 2, 12, 7], [4, 1, 15, 8, 3]));
