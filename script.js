@@ -221,7 +221,8 @@ checkDogs([9, 16, 6, 8, 3], [10, 5, 6, 1, 4]);
 const eurToUsd = 1.1;
 
 const movementsUSD = movements.map(function (mov) {
-  return mov * 1.1;
+  // return mov * 1.1;
+  return 23;
 });
 
 console.log(movements);
