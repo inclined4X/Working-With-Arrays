@@ -86,6 +86,9 @@ const displayMovement = function (movements) {
 displayMovement(account1.movements);
 
 const user = 'Steven Thomas Williams'; //stw
+const userName = user.toLowerCase().split(' ');
+console.log(userName);
+
 /*
 // console.log(containerMovements.innerHTML);
 /////////////////////////////////////////////////
