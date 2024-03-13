@@ -85,15 +85,17 @@ const displayMovement = function (movements) {
 
 displayMovement(account1.movements);
 
-const createUsernames = function (user) {
-  const userName = user
-    .toLowerCase()
-    .split(' ')
-    .map(name => name[0])
-    .join('');
+const createUsernames = function (accs) {
+  accs.forEach(function (acc) {
+    acc.userName = acc.owner
+      .toLowerCase()
+      .split(' ')
+      .map(name => name[0])
+      .join('');
+  });
 };
-createUsernames('Steven Thomas Williams'); //stw
-
+createUsernames(accounts); //stw
+console.log(accounts);
 /*
 // console.log(containerMovements.innerHTML);
 /////////////////////////////////////////////////
