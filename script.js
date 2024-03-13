@@ -61,7 +61,7 @@ const inputTransferAmount = document.querySelector('.form__input--amount');
 const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
-
+/*
 //DOM ELEMENTS
 const displayMovement = function (movements) {
   containerMovements.innerHTML = '';
@@ -288,7 +288,7 @@ console.log(withdrawals);
 // arrow
 const withdrawalsArr = movements.filter(mov => mov < 0);
 console.log(withdrawalsArr );
-*/
+
 
 //reduce
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
@@ -309,3 +309,23 @@ const max = movements.reduce((acc, mov) => {
 }, movements[0]);
 
 console.log(max);
+*/
+
+// coding challenge #2
+
+const calcAverageHumanAge = function (ages) {
+  const humanAge = ages.map(age => (age <= 2 ? 2 * age : 16 + age * 4));
+  console.log(humanAge);
+  const adultDogs = humanAge.filter(age => age >= 18);
+  console.log(adultDogs);
+
+  const average =
+    adultDogs.reduce((acc, age) => acc + age, 0) / adultDogs.length;
+  return average;
+
+  //
+};
+
+const avg1 = calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]);
+const avg2 = calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]);
+console.log(avg1, avg2);
