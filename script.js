@@ -61,7 +61,7 @@ const inputTransferAmount = document.querySelector('.form__input--amount');
 const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
-/*
+
 //DOM ELEMENTS
 const displayMovement = function (movements) {
   containerMovements.innerHTML = '';
@@ -84,7 +84,9 @@ const displayMovement = function (movements) {
 };
 
 displayMovement(account1.movements);
-*/
+
+const user = 'Steven Thomas Williams'; //stw
+/*
 // console.log(containerMovements.innerHTML);
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
@@ -216,7 +218,7 @@ const checkDogs = function (dogsJulia, dogsKate) {
 
 checkDogs([3, 5, 2, 12, 7], [4, 1, 15, 8, 3]);
 checkDogs([9, 16, 6, 8, 3], [10, 5, 6, 1, 4]);
-*/
+
 
 const eurToUsd = 1.1;
 
@@ -246,3 +248,4 @@ const movementsDescriptions = movements.map(
 );
 
 console.log(movementsDescriptions);
+*/
