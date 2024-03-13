@@ -258,7 +258,7 @@ const movementsDescriptions = movements.map(
 );
 
 console.log(movementsDescriptions);
-*/
+
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
@@ -276,3 +276,18 @@ const withdrawals = movements.filter(function (mov) {
   return mov < 0;
 });
 console.log(withdrawals);
+
+// arrow
+const withdrawalsArr = movements.filter(mov => mov < 0);
+console.log(withdrawalsArr );
+*/
+
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+console.log(movements);
+// acumulator -> snowball
+const balance = movements.reduce(function (acc, curr, i, arr) {
+  console.log(`Iteration ${i}: ${acc}`);
+  return acc + curr;
+}, 0);
+
+console.log(balance);
