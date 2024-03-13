@@ -285,9 +285,10 @@ console.log(withdrawalsArr );
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 console.log(movements);
 // acumulator -> snowball
-const balance = movements.reduce(function (acc, curr, i, arr) {
-  console.log(`Iteration ${i}: ${acc}`);
-  return acc + curr;
-}, 0);
+const balance = movements.reduce((acc, curr, i, arr) => acc + curr, 0);
 
 console.log(balance);
+
+let balance2 = 0;
+for (const mov of movements) balance2 += mov; // blance2 = balance2 + mov
+console.log(balance2);
