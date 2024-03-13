@@ -239,7 +239,7 @@ for (const mov of movements) {
 console.log(movementsUSDFor);
 
 const movementsDescriptions = movements.map(
-  (mov, i, arr) =>
+  (mov, i) =>
     `Movement ${i + 1} You ${mov > 0 ? 'deposited' : 'withdrew'} ${Math.abs(
       mov
     )}`
