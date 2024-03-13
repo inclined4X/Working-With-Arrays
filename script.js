@@ -85,14 +85,14 @@ const displayMovement = function (movements) {
 
 displayMovement(account1.movements);
 
-const user = 'Steven Thomas Williams'; //stw
-const userName = user
-  .toLowerCase()
-  .split(' ')
-  .map(name => name[0])
-  .join('');
-
-console.log(userName);
+const createUsernames = function (user) {
+  const userName = user
+    .toLowerCase()
+    .split(' ')
+    .map(name => name[0])
+    .join('');
+};
+createUsernames('Steven Thomas Williams'); //stw
 
 /*
 // console.log(containerMovements.innerHTML);
